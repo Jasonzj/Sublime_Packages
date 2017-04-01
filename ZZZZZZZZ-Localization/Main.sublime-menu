@@ -1,0 +1,52 @@
+[
+    {
+        "caption": "文件", 
+        "id": "file", 
+        "mnemonic": "F"
+    }, 
+    {
+        "caption": "编辑", 
+        "id": "edit", 
+        "mnemonic": "E"
+    }, 
+    {
+        "caption": "选择", 
+        "id": "selection", 
+        "mnemonic": "S"
+    }, 
+    {
+        "caption": "查找", 
+        "id": "find", 
+        "mnemonic": "I"
+    }, 
+    {
+        "caption": "视图", 
+        "id": "view", 
+        "mnemonic": "V"
+    }, 
+    {
+        "caption": "跳转", 
+        "id": "goto", 
+        "mnemonic": "G"
+    }, 
+    {
+        "caption": "工具", 
+        "id": "tools", 
+        "mnemonic": "T"
+    }, 
+    {
+        "caption": "项目", 
+        "id": "project", 
+        "mnemonic": "P"
+    }, 
+    {
+        "caption": "首选项", 
+        "id": "preferences", 
+        "mnemonic": "N"
+    }, 
+    {
+        "caption": "Help", 
+        "id": "help", 
+        "mnemonic": "H"
+    }
+]

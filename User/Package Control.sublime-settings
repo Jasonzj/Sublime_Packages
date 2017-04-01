@@ -1,0 +1,44 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"All Autocomplete",
+		"AutoFileName",
+		"Autoprefixer",
+		"BracketHighlighter",
+		"ChineseLocalizations",
+		"CSS Extended Completions",
+		"CSScomb",
+		"Emmet",
+		"GitGutter",
+		"HTML-CSS-JS Prettify",
+		"Ionic Framework Extended Autocomplete",
+		"JavaScript Completions",
+		"jQuery",
+		"JsFormat",
+		"JSHint",
+		"MarkdownEditing",
+		"Material Theme",
+		"MatlabFilenameAutoComplete",
+		"Nodejs",
+		"Numix Theme",
+		"OmniMarkupPreviewer",
+		"Package Control",
+		"Sass",
+		"SASS Build",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"SublimeTmpl",
+		"Theme - Brogrammer",
+		"Theme - Spacegray",
+		"Web Inspector"
+	],
+	"repositories":
+	[
+		"https://github.com/andruhon/SublimeAllAutocomplete",
+		"https://github.com/andruhon/SublimeAllAutocomplete"
+	]
+}

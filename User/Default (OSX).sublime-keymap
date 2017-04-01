@@ -1,0 +1,11 @@
+[
+  {
+    "keys": ["ctrl+alt+m"],
+    "command": "sublime_tmpl",
+    "args": {"type":"md"},
+    "context":[{"key":"sublime_tmpl.md"}] 
+  },{ "keys": ["super+e"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Evernote: "} },
+ { "keys": ["ctrl+e", "ctrl+s"], "command": "send_to_evernote" },
+ { "keys": ["ctrl+e", "ctrl+o"], "command": "open_evernote_note" },
+ { "keys": ["ctrl+e", "ctrl+u"], "command": "save_evernote_note" }
+]
