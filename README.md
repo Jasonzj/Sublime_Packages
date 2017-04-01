@@ -1,5 +1,3 @@
-# My Sublime Text3
-
 ## Sublime插件
 
 #### AutoFileName
