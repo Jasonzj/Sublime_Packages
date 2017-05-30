@@ -5,6 +5,7 @@
 	],
 	"installed_packages":
 	[
+		"Alignment",
 		"All Autocomplete",
 		"AutoFileName",
 		"Autoprefixer",
@@ -24,17 +25,20 @@
 		"MarkdownEditing",
 		"Material Theme",
 		"MatlabFilenameAutoComplete",
-		"Nodejs",
 		"Numix Theme",
 		"OmniMarkupPreviewer",
 		"Package Control",
 		"Sass",
 		"SASS Build",
+		"SCSS",
 		"SideBarEnhancements",
+		"SublimeAllAutocomplete",
 		"SublimeLinter-jshint",
 		"SublimeTmpl",
+		"Terminal",
 		"Theme - Brogrammer",
 		"Theme - Spacegray",
+		"Vue Syntax Highlight",
 		"Web Inspector"
 	],
 	"repositories":

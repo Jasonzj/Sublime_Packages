@@ -30,7 +30,7 @@ DISABLE_KEYMAP = None
 
 class SublimeTmplCommand(sublime_plugin.TextCommand):
 
-    def run(self, edit, type='html'):
+    def run(self, edit, type='html', paths = [None]):
         view = self.view
         opts = self.get_settings(type)
         tmpl = self.get_code(type)
@@ -40,7 +40,7 @@ class SublimeTmplCommand(sublime_plugin.TextCommand):
             return False
 
         # print(KEY_SYNTAX in opts)
-        self.tab = self.creat_tab(view)
+        self.tab = self.creat_tab(view, paths)
 
         self.set_syntax(opts)
         # sublime.set_timeout(lambda: self.set_syntax(opts), 1000)
@@ -130,14 +130,17 @@ class SublimeTmplCommand(sublime_plugin.TextCommand):
         code = re.sub(r"(?<!\\)\${(?!\d)", '\${', code)
         return code
 
-    def creat_tab(self, view):
+    def creat_tab(self, view, paths = [None]):
         win = view.window()
+        # tab = win.open_file('/tmp/123')
         tab = win.new_file()
+        # tab.set_name('untitled')
+        active = win.active_view()
+        active.settings().set('default_dir', paths[0])
         return tab
 
     def set_code(self, code):
         tab = self.tab
-        # tab.set_name('untitled.' + self.type)
         # insert codes
         tab.run_command('insert_snippet', {'contents': code})
 
@@ -205,8 +208,7 @@ def plugin_loaded():  # for ST3 >= 3016
     # global PACKAGES_PATH
     PACKAGES_PATH = sublime.packages_path()
     TARGET_PATH = os.path.join(PACKAGES_PATH, PACKAGE_NAME)
-    # print(BASE_PATH, os.path.dirname(BASE_PATH))
-    # print(TARGET_PATH)
+    # print(BASE_PATH, os.path.dirname(BASE_PATH), TARGET_PATH)
 
     # auto create custom_path
     custom_path = os.path.join(PACKAGES_PATH, 'User', PACKAGE_NAME, TMLP_DIR)
@@ -214,14 +216,21 @@ def plugin_loaded():  # for ST3 >= 3016
     if not os.path.isdir(custom_path):
         os.makedirs(custom_path)
 
-    # first run
+    # try:
+    #     from package_control import events
+    #     if events.post_upgrade(PACKAGE_NAME):
+    #         print('Upgraded to %s!' % events.post_upgrade(PACKAGE_NAME))
+    # except Exception as e:
+    #     print(e)
+
+    # first run (https://git.io/vKMIS, does not need extract files)
     if not os.path.isdir(TARGET_PATH):
         os.makedirs(os.path.join(TARGET_PATH, TMLP_DIR))
         # copy user files
         tmpl_dir = TMLP_DIR + '/'
         file_list = [
             'Default.sublime-commands', 'Main.sublime-menu',
-            # if don't copy .py, ST3 throw: ImportError: No module named
+            # if don't copy .py, ST3 throw: ImportError: No module named # fix: restart sublime
             'sublime-tmpl.py',
             'README.md',
             tmpl_dir + 'css.tmpl', tmpl_dir + 'html.tmpl',

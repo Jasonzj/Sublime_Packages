@@ -5,6 +5,28 @@
     "args": {"type":"md"},
     "context":[{"key":"sublime_tmpl.md"}] 
   },
-  { "keys": ["ctrl+alt+shift+p"], "command": "autoprefixer" }
+  { "keys": ["ctrl+alt+shift+p"], "command": "autoprefixer" },
+  { "keys": ["f5"], "command": "side_bar_files_open_with",
+	    "args": {
+	        "paths": [],
+	        "application": "/Applications/Google Chrome.app",
+	        "extensions":".*"
+	    }
+	},
+  { "keys": ["f3"], "command": "side_bar_files_open_with",
+       "args": {
+          "paths": [],
+          "application": "/Applications/Firefox.app",
+          "extensions":".*"
+      }
+  },
+  { "keys": ["f4"], "command": "side_bar_files_open_with",
+       "args": {
+          "paths": [],
+          "application": "/Applications/Safari.app",
+          "extensions":".*"
+      }
+  },
+
 
 ]

@@ -12,7 +12,7 @@
     // Because of this, setting them here will have no effect: you must set them
     // in your User File Preferences.
     "font_face": "",
-    "font_size": 10,
+    "font_size": 12.5,
 
     // Valid options are "no_bold", "no_italic", "no_antialias", "gray_antialias",
     // "subpixel_antialias", "no_round" (OS X only), "gdi" (Windows only) and
@@ -44,7 +44,7 @@
     "spell_check": false,
 
     // The number of spaces a tab is considered equal to
-    "tab_size": 4,
+    "tab_size": 2,
 
     // Set to true to insert spaces when tab is pressed
     "translate_tabs_to_spaces": false,
