@@ -5,7 +5,7 @@
 #### BracketHighlighter
 使用说明：括号以及标签层级显示，不用担心选中的代码属于哪个代码块，一目了然。 "等符号的对应高亮显
 #### CSS Extended Completions
-使用说明：关联CSS文件，智能提示css文件中的类名，非常好用。
+使用说明：关联CSS文件，智能提示css文件中的类名
 #### Emmet
 使用说明：前端神器。一个可以极大提高web开发者HTML和CSS工作效率的工具箱组件。
 #### GitGutter
